@@ -33,7 +33,7 @@ namespace Onlio.Demo.BankAccount
             if (amount > Balance) throw new ArgumentOutOfRangeException("amount");
             if (amount < 0) throw new ArgumentOutOfRangeException("amount");
 
-            Balance += amount;
+            Balance -= amount;
         }
 
         public void Credit(double amount)
