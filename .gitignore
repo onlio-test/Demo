@@ -1,6 +1,19 @@
-# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
-bin
-obj
+# User Files
+*.user
+*.suo
+
+# Runtime Files
+*.pch
+*.ncb
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+obj/
+[Rr]elease*/
 
 # mstest test results
-TestResults
+*/TestResults/**/In/*
+*/TestResults/**/Out/*
