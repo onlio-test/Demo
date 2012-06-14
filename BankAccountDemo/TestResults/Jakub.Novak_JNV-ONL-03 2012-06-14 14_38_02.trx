@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="80e457bc-be7f-4f13-8359-4d6d9e383e85" name="Jakub.Novak@JNV-ONL-03 2012-06-14 14:38:02" runUser="JNV-ONL-03\Jakub.Novak" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="546be927-f904-492f-8538-62decdcec472">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="Jakub.Novak_JNV-ONL-03 2012-06-14 14_38_02">
+      <DeploymentItem filename="C:\Projects\GitHub\Demo\BankAccountDemo\BusinessLogic\bin\Debug\Onlio.Demo.BankAccount.dll" />
+      <DeploymentItem filename="C:\Projects\GitHub\Demo\BankAccountDemo\ConsoleClient\bin\Debug\ConsoleClient.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Code Coverage">
+            <Configuration>
+              <CodeCoverage xmlns="">
+                <Regular>
+                  <CodeCoverageItem binaryFile="C:\Projects\GitHub\Demo\BankAccountDemo\ConsoleClient\bin\Debug\ConsoleClient.exe" pdbFile="C:\Projects\GitHub\Demo\BankAccountDemo\ConsoleClient\bin\Debug\ConsoleClient.instr.pdb" instrumentInPlace="true" />
+                  <CodeCoverageItem binaryFile="C:\Projects\GitHub\Demo\BankAccountDemo\BusinessLogic\bin\Debug\Onlio.Demo.BankAccount.dll" pdbFile="C:\Projects\GitHub\Demo\BankAccountDemo\BusinessLogic\bin\Debug\Onlio.Demo.BankAccount.instr.pdb" instrumentInPlace="true" />
+                </Regular>
+              </CodeCoverage>
+            </Configuration>
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-14T14:38:02.5476492+02:00" queuing="2012-06-14T14:38:05.1977447+02:00" start="2012-06-14T14:38:05.3008697+02:00" finish="2012-06-14T14:38:10.0446197+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="5" executed="5" passed="3" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <ResultFiles>
+      <ResultFile path="JNV-ONL-03\data.coverage" />
+    </ResultFiles>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="DebitTest" storage="c:\projects\github\demo\bankaccountdemo\businesslogictest\bin\debug\businesslogictest.dll" id="679ecc28-db59-7c46-c2a2-3be179438216">
+      <Execution id="481d4f35-1be8-4b5d-9048-186e1d37d5c6" />
+      <TestMethod codeBase="C:/Projects/GitHub/Demo/BankAccountDemo/BusinessLogicTest/bin/Debug/BusinessLogicTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessLogicTest.BankAccountTest, BusinessLogicTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DebitTest" />
+    </UnitTest>
+    <UnitTest name="BankAccountConstructorTest" storage="c:\projects\github\demo\bankaccountdemo\businesslogictest\bin\debug\businesslogictest.dll" id="02215e28-fd68-ad9e-84a7-dffefb675a30">
+      <Execution id="0d6fb957-1b50-4fda-b370-35efb35273de" />
+      <TestMethod codeBase="C:/Projects/GitHub/Demo/BankAccountDemo/BusinessLogicTest/bin/Debug/BusinessLogicTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessLogicTest.BankAccountTest, BusinessLogicTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BankAccountConstructorTest" />
+    </UnitTest>
+    <UnitTest name="TransferMoneyTest" storage="c:\projects\github\demo\bankaccountdemo\consoleclienttest\bin\debug\consoleclienttest.dll" id="8de35916-ae57-372f-5223-5a3e60c234aa">
+      <Execution id="e19193ec-3d09-4591-a972-3b97684ae290" />
+      <TestMethod codeBase="C:/Projects/GitHub/Demo/BankAccountDemo/ConsoleClientTest/bin/Debug/ConsoleClientTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleClientTest.ProgramTest, ConsoleClientTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TransferMoneyTest" />
+    </UnitTest>
+    <UnitTest name="CreditTest" storage="c:\projects\github\demo\bankaccountdemo\businesslogictest\bin\debug\businesslogictest.dll" id="17cd956c-615c-ec7a-f573-ef2bf002e761">
+      <Execution id="f1632d7f-7f47-4df8-92b6-fe37d2a34bfe" />
+      <TestMethod codeBase="C:/Projects/GitHub/Demo/BankAccountDemo/BusinessLogicTest/bin/Debug/BusinessLogicTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessLogicTest.BankAccountTest, BusinessLogicTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreditTest" />
+    </UnitTest>
+    <UnitTest name="GetBankAccountTest" storage="c:\projects\github\demo\bankaccountdemo\consoleclienttest\bin\debug\consoleclienttest.dll" id="a7bb5de6-332a-2e7c-d399-f933566ef1de">
+      <Execution id="b34e1600-5dc9-4fa0-875d-bf65bc976021" />
+      <TestMethod codeBase="C:/Projects/GitHub/Demo/BankAccountDemo/ConsoleClientTest/bin/Debug/ConsoleClientTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleClientTest.ProgramTest, ConsoleClientTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetBankAccountTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="02215e28-fd68-ad9e-84a7-dffefb675a30" executionId="0d6fb957-1b50-4fda-b370-35efb35273de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="17cd956c-615c-ec7a-f573-ef2bf002e761" executionId="f1632d7f-7f47-4df8-92b6-fe37d2a34bfe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="679ecc28-db59-7c46-c2a2-3be179438216" executionId="481d4f35-1be8-4b5d-9048-186e1d37d5c6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8de35916-ae57-372f-5223-5a3e60c234aa" executionId="e19193ec-3d09-4591-a972-3b97684ae290" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a7bb5de6-332a-2e7c-d399-f933566ef1de" executionId="b34e1600-5dc9-4fa0-875d-bf65bc976021" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0d6fb957-1b50-4fda-b370-35efb35273de" testId="02215e28-fd68-ad9e-84a7-dffefb675a30" testName="BankAccountConstructorTest" computerName="JNV-ONL-03" duration="00:00:00.1604386" startTime="2012-06-14T14:38:06.8821197+02:00" endTime="2012-06-14T14:38:07.4664947+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d6fb957-1b50-4fda-b370-35efb35273de">
+    </UnitTestResult>
+    <UnitTestResult executionId="f1632d7f-7f47-4df8-92b6-fe37d2a34bfe" testId="17cd956c-615c-ec7a-f573-ef2bf002e761" testName="CreditTest" computerName="JNV-ONL-03" duration="00:00:00.0034208" startTime="2012-06-14T14:38:07.4836822+02:00" endTime="2012-06-14T14:38:07.5180572+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f1632d7f-7f47-4df8-92b6-fe37d2a34bfe">
+    </UnitTestResult>
+    <UnitTestResult executionId="481d4f35-1be8-4b5d-9048-186e1d37d5c6" testId="679ecc28-db59-7c46-c2a2-3be179438216" testName="DebitTest" computerName="JNV-ONL-03" duration="00:00:00.0677862" startTime="2012-06-14T14:38:07.5180572+02:00" endTime="2012-06-14T14:38:07.6039947+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="481d4f35-1be8-4b5d-9048-186e1d37d5c6">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;1,98&gt;. Actual:&lt;0&gt;. </Message>
+          <StackTrace>   at BusinessLogicTest.BankAccountTest.DebitTest() in C:\Projects\GitHub\Demo\BankAccountDemo\BusinessLogicTest\BankAccountTest.cs:line 130
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e19193ec-3d09-4591-a972-3b97684ae290" testId="8de35916-ae57-372f-5223-5a3e60c234aa" testName="TransferMoneyTest" computerName="JNV-ONL-03" duration="00:00:00.0923074" startTime="2012-06-14T14:38:07.6211822+02:00" endTime="2012-06-14T14:38:08.3086822+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e19193ec-3d09-4591-a972-3b97684ae290">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;1,98&gt;. Actual:&lt;0&gt;. </Message>
+          <StackTrace>   at ConsoleClientTest.ProgramTest.TransferMoneyTest() in C:\Projects\GitHub\Demo\BankAccountDemo\ConsoleClientTest\ProgramTest.cs:line 94
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b34e1600-5dc9-4fa0-875d-bf65bc976021" testId="a7bb5de6-332a-2e7c-d399-f933566ef1de" testName="GetBankAccountTest" computerName="JNV-ONL-03" duration="00:00:00.0018697" startTime="2012-06-14T14:38:08.3258697+02:00" endTime="2012-06-14T14:38:08.3430572+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b34e1600-5dc9-4fa0-875d-bf65bc976021">
+    </UnitTestResult>
+  </Results>
+</TestRun>

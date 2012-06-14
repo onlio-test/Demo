@@ -20,7 +20,7 @@ namespace Onlio.Demo.BankAccount
 
         private BankAccount(double balance) { }
 
-        public BankAccount(string customerName, double currentBalance)
+        public BankAccount(string customerName, double balance)
         {
             this.CustomerName = customerName;
             this.Balance = balance;

@@ -33,8 +33,8 @@ namespace Onlio.Demo.BankAccount
 
         public static BankAccount GetBankAccount(string customerName)
         {
-            var result = new BankAccount(customerName);
-            result.Balance = GetBalance(customerName);
+            var balance = GetBalance(customerName);
+            var result = new BankAccount(customerName, balance);
             return result;
         }
 
